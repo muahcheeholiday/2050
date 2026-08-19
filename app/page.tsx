@@ -70,14 +70,17 @@ export default function Home() {
 
   // Main story screen
   return (
-    <div className="relative min-h-dvh w-full overflow-hidden">
+    <div className="relative min-h-dvh w-full">
       <div
-        className="absolute inset-0 bg-cover bg-center transition-all duration-700"
+        className="fixed inset-0 bg-cover bg-center transition-all duration-700 -z-10"
         style={{ backgroundImage: `url('${scene.imageUrl}')` }}
       />
-      <div className="absolute inset-0 bg-gradient-to-t from-black via-black/70 to-black/20" />
+      <div className="fixed inset-0 bg-gradient-to-t from-black via-black/70 to-black/20 -z-10" />
 
-      <div className="relative z-10 min-h-dvh flex flex-col items-center justify-end px-6 pb-24 pt-24 sm:px-12 sm:pb-32 max-w-3xl mx-auto text-center">
+      <div
+        className="relative z-10 min-h-dvh flex flex-col items-center justify-center px-6 pt-24 sm:px-12 max-w-3xl mx-auto text-center"
+        style={{ paddingBottom: "calc(5rem + env(safe-area-inset-bottom))" }}
+      >
         <div className="absolute top-6 left-1/2 -translate-x-1/2 sm:top-10 flex items-center gap-3">
           <div className="w-2 h-8 bg-yellow-400" />
           <span className="font-headline font-bold tracking-widest text-lg sm:text-xl uppercase">
@@ -185,7 +188,13 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="fixed bottom-0 left-0 right-0 z-20 bg-yellow-400 text-black px-6 py-3 text-center">
+      <div
+        className="fixed bottom-0 left-0 right-0 z-20 bg-yellow-400 text-black px-6 text-center"
+        style={{
+          paddingTop: "0.75rem",
+          paddingBottom: "calc(0.75rem + env(safe-area-inset-bottom))",
+        }}
+      >
         <p className="text-sm sm:text-base font-headline font-medium italic">
           Inspired by The Lorax: real change starts with people who choose to care.
         </p>
