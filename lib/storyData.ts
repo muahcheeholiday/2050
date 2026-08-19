@@ -3,6 +3,12 @@ export type SceneChoice = {
   nextId: string;
 };
 
+export type Stat = {
+  value: string;
+  label: string;
+  source: string;
+};
+
 export type Scene = {
   id: string;
   year: string;
@@ -11,6 +17,7 @@ export type Scene = {
   narrative: string;
   choices: SceneChoice[];
   ending?: "positive" | "neutral" | "negative";
+  stat?: Stat;
 };
 
 export type Gender = "male" | "female";
