@@ -148,7 +148,19 @@ singapore_compromise: {
       label: "Ratio of global clean energy investment to fossil fuel investment in 2024 ($2 trillion vs. ~$1 trillion) — up from an even 1-to-1 split just six years earlier",
       source: "International Energy Agency, World Energy Investment 2024",
     },
+    newsFlash: {
+  headline: "Emissions Curve Bends Below 2°C Pathway, Scientists Confirm",
+  dateline: "GLOBAL DESK — 2040",
+  stats: [
+    { value: "~1.6°C", label: "Projected warming by 2100 on current trajectory" },
+    { value: "-38%", label: "Global CO2 emissions vs. 2019 levels" },
+    { value: "~9%", label: "Species at high extinction risk — near the low end of IPCC's 1.5°C-consistent range" },
+  ],
+  body: "Sustained carbon pricing and the phase-out of fossil subsidies have pulled the world toward the lower end of IPCC-modeled pathways. Scientists caution the window for 1.5°C has likely already closed, but the steeper cuts achieved this decade mark the difference between a habitable overshoot and a catastrophic one.",
+  source: "Projection extrapolated from IPCC AR6 WG1/WG2 and Climate Action Tracker pathway modeling — illustrative, not a forecast",
+},
     choices: [{ text: "Continue to 2050", nextId: "ending_thriving" }],
+    
   },
   bold_ease_off: {
     id: "bold_ease_off",
@@ -157,6 +169,17 @@ singapore_compromise: {
     imageUrl: "/images/scene-empty-factory.jpg",
     narrative:
       "Without sustained pressure, old interests crept back in. Subsidies quietly returned in new forms. The early progress stalled, and emissions began climbing again by the mid-2030s.",
+    newsFlash: {
+  headline: "Subsidies Creep Back, Emissions Resume Climb",
+  dateline: "GLOBAL DESK — 2040",
+  stats: [
+    { value: "~2.4°C", label: "Projected warming by 2100 on current trajectory" },
+    { value: "+6%", label: "Global CO2 emissions vs. 2019 levels" },
+    { value: "~14%", label: "Species at high extinction risk under this warming band" },
+  ],
+  body: "Early progress from the bold 2025 reforms lost momentum once political pressure eased. Emissions, which briefly declined, have since resumed rising — tracking closer to the IPCC's 'middle of the road' scenario than the steep cuts scientists say are needed.",
+  source: "Projection extrapolated from IPCC AR6 WG1/WG2 and Climate Action Tracker pathway modeling — illustrative, not a forecast",
+},
     choices: [{ text: "Continue to 2050", nextId: "ending_partial" }],
   },
 
@@ -190,6 +213,17 @@ singapore_compromise: {
       label: "Annual climate finance target for developing nations by 2035, agreed at COP29 — though analysts and Global South delegates called the deal's core $300bn commitment 'a joke' compared to actual need",
       source: "UNFCCC, COP29 Outcomes, Nov 2024",
     },
+    newsFlash: {
+  headline: "Climate Finance Reaches Global South, Emissions Growth Slows",
+  dateline: "GLOBAL DESK — 2040",
+  stats: [
+    { value: "~2.0°C", label: "Projected warming by 2100 on current trajectory" },
+    { value: "-18%", label: "Global CO2 emissions vs. 2019 levels" },
+    { value: "~10%", label: "Species at high extinction risk under this warming band" },
+  ],
+  body: "Redirected climate finance helped emerging economies leapfrog fossil infrastructure entirely in many regions. Progress remains short of the 43% cut scientists say is needed for 1.5°C, but the emissions curve has clearly turned.",
+  source: "Projection extrapolated from IPCC AR6 WG1/WG2 and Climate Action Tracker pathway modeling — illustrative, not a forecast",
+},
     choices: [{ text: "Continue to 2050", nextId: "ending_positive_moderate" }],
   },
   moderate_focus_rich: {
@@ -199,6 +233,17 @@ singapore_compromise: {
     imageUrl: "/images/scene-flooded-city.jpg",
     narrative:
       "Wealthy nations hit their targets. But without support, industrializing economies leaned harder on coal to keep pace. Global emissions plateaued instead of falling. Coastal cities in the Global South face worsening floods with no funds to adapt.",
+    newsFlash: {
+  headline: "Emissions Plateau as Global South Left Without Finance",
+  dateline: "GLOBAL DESK — 2040",
+  stats: [
+    { value: "~2.6°C", label: "Projected warming by 2100 on current trajectory" },
+    { value: "+2%", label: "Global CO2 emissions vs. 2019 levels" },
+    { value: "~16%", label: "Species at high extinction risk under this warming band" },
+  ],
+  body: "Wealthy nations hit their own targets, but without financing, coal use accelerated across industrializing economies. The result mirrors Climate Action Tracker's 'current policies' trajectory — a plateau, not the decline scientists warn is necessary.",
+  source: "Projection extrapolated from IPCC AR6 WG1/WG2 and Climate Action Tracker pathway modeling — illustrative, not a forecast",
+},
     choices: [{ text: "Continue to 2050", nextId: "ending_partial" }],
   },
 
@@ -227,6 +272,17 @@ singapore_compromise: {
     imageUrl: "/images/scene-storm-city.jpg",
     narrative:
       "A decade lost cannot be fully regained. Emergency measures slow the damage, but the world is now adapting to a hotter, harsher climate rather than preventing it. Coastal defenses and heat shelters become as important as clean energy.",
+    newsFlash: {
+  headline: "Emergency Measures Slow, But Don't Reverse, Warming Trend",
+  dateline: "GLOBAL DESK — 2040",
+  stats: [
+    { value: "~2.7°C", label: "Projected warming by 2100 on current trajectory" },
+    { value: "+9%", label: "Global CO2 emissions vs. 2019 levels" },
+    { value: "~17%", label: "Species at high extinction risk under this warming band" },
+  ],
+  body: "A decade of delay pushed the world close to Climate Action Tracker's 'current policies' baseline of roughly 2.6–2.7°C. Late-stage emergency action has begun bending the curve, but scientists note that warming already underway will keep intensifying for decades regardless.",
+  source: "Projection extrapolated from IPCC AR6 WG1/WG2 and Climate Action Tracker pathway modeling — illustrative, not a forecast",
+},
     choices: [{ text: "Continue to 2050", nextId: "ending_partial" }],
   },
   delay_continue: {
@@ -236,6 +292,17 @@ singapore_compromise: {
     imageUrl: "/images/scene-drought.jpg",
     narrative:
       "The warnings you once shouted from outside the halls of power went unheeded from within them too. Droughts, floods, and mass displacement accelerate. The systems built for a stable climate are buckling under one that no longer exists.",
+    newsFlash: {
+  headline: "World Tracks Toward High-Emissions Scenario, Scientists Warn",
+  dateline: "GLOBAL DESK — 2040",
+  stats: [
+    { value: "~3.2°C", label: "Projected warming by 2100 on current trajectory" },
+    { value: "+22%", label: "Global CO2 emissions vs. 2019 levels" },
+    { value: "~1-in-4", label: "Species estimated at high extinction risk under this warming band" },
+  ],
+  body: "Continued fossil expansion has pushed the world toward the higher end of IPCC-modeled pathways. At this trajectory, scientists project accelerating ice sheet loss, more frequent extreme heat events, and extinction risk approaching the upper range assessed for 3°C+ of warming.",
+  source: "Projection extrapolated from IPCC AR6 WG1/WG2 and Climate Action Tracker pathway modeling — illustrative, not a forecast",
+},
     choices: [{ text: "Continue to 2050", nextId: "ending_catastrophe" }],
   },
 
