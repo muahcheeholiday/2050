@@ -314,6 +314,17 @@ singapore_compromise: {
     imageUrl: "/images/ending-green-city.jpg",
     narrative:
       "2050. Cities run on clean power. Forests once cleared for grazing are regrowing. It wasn't easy, and it wasn't fast enough for everyone who suffered along the way — but the world you helped build is one where your grandchildren can imagine a future.",
+    newsFlash: {
+  headline: "World Holds Near 1.5°C Overshoot, Scientists Call It 'Best Case Achieved'",
+  dateline: "GLOBAL DESK — 2050",
+  stats: [
+    { value: "~1.5°C", label: "Warming locked in relative to pre-industrial levels" },
+    { value: "Net-zero", label: "Global CO2 emissions reached, a decade ahead of most 2050 targets" },
+    { value: "~9%", label: "Species remain at high extinction risk — the low end of IPCC's modeled range" },
+  ],
+  body: "A generation of sustained carbon pricing, subsidy reform, and rapid clean energy deployment kept the world at the least-severe end of every IPCC-modeled pathway. Impacts are still being felt — sea levels continue rising, some ecosystems remain lost — but researchers note this is close to the best outcome climate models say was still achievable from a 2025 starting point.",
+  source: "Projection extrapolated from IPCC AR6 WG1/WG2 and Climate Action Tracker pathway modeling — illustrative, not a forecast",
+},
     choices: [],
     ending: "positive",
   },
@@ -324,6 +335,17 @@ singapore_compromise: {
     imageUrl: "/images/ending-solar-world.jpg",
     narrative:
       "2050. The transition took longer than the boldest activists wanted, but it reached further than the cautious ever expected. Clean energy powers both the wealthiest capitals and the villages that were once left behind. Progress, hard-won and shared.",
+    newsFlash: {
+  headline: "A Slower, Fairer Transition Reaches Net-Zero by Mid-Century",
+  dateline: "GLOBAL DESK — 2050",
+  stats: [
+    { value: "~1.8°C", label: "Warming locked in relative to pre-industrial levels" },
+    { value: "-52%", label: "Global CO2 emissions vs. 2019 levels" },
+    { value: "~10%", label: "Species at high extinction risk under this warming band" },
+  ],
+  body: "Redirecting climate finance to the Global South meant the transition took longer to gather speed, but it reached further and more equitably. The result lands just above the 1.5°C-consistent range scientists outlined in 2025 — a narrower miss than most models projected was likely.",
+  source: "Projection extrapolated from IPCC AR6 WG1/WG2 and Climate Action Tracker pathway modeling — illustrative, not a forecast",
+},
     choices: [],
     ending: "positive",
   },
@@ -334,6 +356,17 @@ singapore_compromise: {
     imageUrl: "/images/ending-mixed-world.jpg",
     narrative:
       "2050. The worst outcomes were avoided, but the best ones slipped away too. The world adapted rather than transformed. Some regions thrive; others remain locked in cycles of disaster and recovery. The story isn't over.",
+    newsFlash: {
+  headline: "World Adapts to a Hotter Climate It Could Not Fully Prevent",
+  dateline: "GLOBAL DESK — 2050",
+  stats: [
+    { value: "~2.4°C", label: "Warming locked in relative to pre-industrial levels" },
+    { value: "-6%", label: "Global CO2 emissions vs. 2019 levels" },
+    { value: "~14%", label: "Species at high extinction risk under this warming band" },
+  ],
+  body: "Uneven, incomplete action left the world in the range Climate Action Tracker long forecast for 'pledges without full delivery.' Adaptation — sea walls, heat shelters, drought-resistant agriculture — is now as central to policy as mitigation ever was. Researchers stress that every fraction of a degree still avoided from here continues to matter.",
+  source: "Projection extrapolated from IPCC AR6 WG1/WG2 and Climate Action Tracker pathway modeling — illustrative, not a forecast",
+},
     choices: [],
     ending: "neutral",
   },
@@ -344,6 +377,17 @@ singapore_compromise: {
     imageUrl: "/images/ending-crisis-world.jpg",
     narrative:
       "2050. The warnings became reality. Displacement, resource conflict, and extreme weather define daily life for hundreds of millions. It didn't have to be this way — and somewhere, in rooms like the one you once sat in, it still isn't too late to change course.",
+    newsFlash: {
+  headline: "World Tracks Toward 3°C+ as Warming Impacts Compound",
+  dateline: "GLOBAL DESK — 2050",
+  stats: [
+    { value: "~3.4°C", label: "Projected warming by 2100 on current trajectory" },
+    { value: "+19%", label: "Global CO2 emissions vs. 2019 levels" },
+    { value: "~1-in-4", label: "Species estimated at high extinction risk under this warming band" },
+  ],
+  body: "Decades of delay locked in a trajectory scientists had warned about since the 2020s. Displacement, water scarcity, and extreme heat now shape policy in every region. Researchers note that even from here, the difference between 3°C and 4°C of eventual warming remains within reach of policy choices still to come.",
+  source: "Projection extrapolated from IPCC AR6 WG1/WG2 and Climate Action Tracker pathway modeling — illustrative, not a forecast",
+},
     choices: [],
     ending: "negative",
   },
