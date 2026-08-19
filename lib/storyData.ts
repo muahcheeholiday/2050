@@ -39,10 +39,8 @@ export const scenes: Record<string, Scene> = {
     title: "The Summons",
     imageUrl: "/images/scene-summit-hall.jpg",
     narrative:
-      "You've spent years standing outside the halls of power, demanding they listen. Today, for the first time, they've invited you in. The World Economic Forum has offered you a seat at the table — a chance to advise a coalition of the planet's most powerful leaders and financiers on the next 25 years of climate policy. Your choices here will echo into 2050.",
-    choices: [
-      { text: "Enter the negotiation room", nextId: "meeting1" },
-    ],
+      "You've spent years standing outside the halls of power, demanding they listen. Today, for the first time, they've invited you in. A coalition of the world's most powerful finance ministers, energy executives, and negotiators has offered you a seat at the table — a chance to shape the next 25 years of climate policy. Your choices here will echo into 2050.",
+    choices: [{ text: "Enter the negotiation room", nextId: "meeting1" }],
   },
 
   meeting1: {
@@ -52,6 +50,11 @@ export const scenes: Record<string, Scene> = {
     imageUrl: "/images/scene-negotiation.jpg",
     narrative:
       "The finance ministers want growth. The energy executives want certainty. You have five minutes to set the tone for everything that follows. What do you push for first?",
+    stat: {
+      value: "$7 trillion",
+      label: "Global fossil fuel subsidies in 2022 — over 7% of world GDP, more than governments spent on education worldwide",
+      source: "IMF, Fossil Fuel Subsidies Data: 2023 Update",
+    },
     choices: [
       { text: "Demand an immediate end to fossil fuel subsidies", nextId: "path_bold" },
       { text: "Propose a gradual, incentive-based transition", nextId: "path_moderate" },
@@ -67,6 +70,11 @@ export const scenes: Record<string, Scene> = {
     imageUrl: "/images/scene-protest.jpg",
     narrative:
       "Your demand triggered fierce resistance from oil-producing nations, but it also galvanized a coalition of island states and youth movements worldwide. Subsidies are being phased out faster than any prior agreement. Markets are volatile. The public is divided.",
+    stat: {
+      value: "43%",
+      label: "Potential cut to global CO2 emissions by 2030 if fossil fuel subsidies were eliminated and replaced with corrective carbon pricing",
+      source: "IMF, Fossil Fuel Subsidies Data: 2023 Update",
+    },
     choices: [
       { text: "Push for a global carbon tax to stabilize the transition", nextId: "bold_carbon_tax" },
       { text: "Ease off — let markets adjust naturally", nextId: "bold_ease_off" },
@@ -78,7 +86,12 @@ export const scenes: Record<string, Scene> = {
     title: "The Great Rewiring",
     imageUrl: "/images/scene-solar-farm.jpg",
     narrative:
-      "The carbon tax reshaped global industry. Renewable energy investment tripled. Millions of jobs shifted from extraction to engineering. It wasn't painless — entire regions had to be retrained and rebuilt — but the trajectory changed.",
+      "The carbon tax reshaped global industry. Clean energy investment — already outpacing fossil fuels two-to-one by the mid-2020s — accelerated further. Millions of jobs shifted from extraction to engineering. It wasn't painless — entire regions had to be retrained and rebuilt — but the trajectory changed.",
+    stat: {
+      value: "2-to-1",
+      label: "Ratio of global clean energy investment to fossil fuel investment in 2024 ($2 trillion vs. ~$1 trillion) — up from an even 1-to-1 split just six years earlier",
+      source: "International Energy Agency, World Energy Investment 2024",
+    },
     choices: [{ text: "Continue to 2050", nextId: "ending_thriving" }],
   },
   bold_ease_off: {
@@ -99,6 +112,11 @@ export const scenes: Record<string, Scene> = {
     imageUrl: "/images/scene-city-transition.jpg",
     narrative:
       "Your incentive-based approach won broad support — tax credits, green bonds, phased targets. Progress is real but uneven. Wealthy nations decarbonize steadily; developing economies struggle to access the capital they were promised.",
+    stat: {
+      value: "15%",
+      label: "Share of global clean energy investment reaching emerging and developing economies — home to two-thirds of the world's population",
+      source: "International Energy Agency, World Energy Investment 2024",
+    },
     choices: [
       { text: "Fight to redirect climate finance to the Global South", nextId: "moderate_finance" },
       { text: "Focus resources on wealthy nations first", nextId: "moderate_focus_rich" },
@@ -111,6 +129,11 @@ export const scenes: Record<string, Scene> = {
     imageUrl: "/images/scene-solar-village.jpg",
     narrative:
       "Billions in climate finance finally reached the communities most affected by a crisis they didn't cause. Solar microgrids power villages that never had reliable electricity. Global emissions curves begin to bend.",
+    stat: {
+      value: "$1.3 trillion",
+      label: "Annual climate finance target for developing nations by 2035, agreed at COP29 — though analysts and Global South delegates called the deal's core $300bn commitment 'a joke' compared to actual need",
+      source: "UNFCCC, COP29 Outcomes, Nov 2024",
+    },
     choices: [{ text: "Continue to 2050", nextId: "ending_positive_moderate" }],
   },
   moderate_focus_rich: {
@@ -131,6 +154,11 @@ export const scenes: Record<string, Scene> = {
     imageUrl: "/images/scene-oil-rig.jpg",
     narrative:
       "Growth targets were met. Fossil fuel production continued largely unchecked. Records for global temperature are broken almost every year now. Extreme weather events are no longer rare exceptions — they're the new normal.",
+    stat: {
+      value: "~5-6 years",
+      label: "Time remaining, at current global emission rates, before the carbon budget for a 50% chance of staying under 1.5°C of warming is exhausted",
+      source: "Nature Climate Change, 'Assessing the size and uncertainty of remaining carbon budgets,' 2023",
+    },
     choices: [
       { text: "Finally push for emergency climate action", nextId: "delay_emergency" },
       { text: "Continue prioritizing short-term economic stability", nextId: "delay_continue" },
