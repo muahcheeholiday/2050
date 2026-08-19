@@ -196,7 +196,7 @@ export default function Home() {
         }}
       >
         <p className="text-sm sm:text-base font-headline font-medium italic">
-          Inspired by The Lorax: real change starts with people who choose to care.
+          Real change starts with the one who chooses to care. 
         </p>
       </div>
     </div>
