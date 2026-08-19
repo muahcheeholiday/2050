@@ -13,6 +13,16 @@ export type Scene = {
   ending?: "positive" | "neutral" | "negative";
 };
 
+export type Gender = "male" | "female";
+
+export function pronoun(gender: Gender, form: "subject" | "object" | "possessive"): string {
+  const table = {
+    male: { subject: "he", object: "him", possessive: "his" },
+    female: { subject: "she", object: "her", possessive: "her" },
+  };
+  return table[gender][form];
+}
+
 export const START_SCENE_ID = "start";
 
 export const scenes: Record<string, Scene> = {
