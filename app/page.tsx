@@ -122,6 +122,41 @@ export default function Home() {
   </div>
 )}
 
+        {scene.newsFlash && (
+  <div className="bg-neutral-900/90 backdrop-blur-sm border border-neutral-700 max-w-2xl mb-8 sm:mb-10">
+    <div className="flex items-center gap-2 bg-red-700 px-4 py-1.5">
+      <span className="font-headline font-bold text-xs tracking-widest uppercase text-white">
+        Breaking Projection
+      </span>
+    </div>
+    <div className="px-5 py-4">
+      <p className="text-xs text-neutral-500 uppercase tracking-wide mb-1">
+        {scene.newsFlash.dateline}
+      </p>
+      <h3 className="font-headline font-bold text-xl sm:text-2xl mb-3 leading-snug">
+        {scene.newsFlash.headline}
+      </h3>
+      <div className="grid grid-cols-3 gap-3 mb-4">
+        {scene.newsFlash.stats.map((s, i) => (
+          <div key={i} className="border-t-2 border-yellow-400 pt-2">
+            <p className="font-headline font-bold text-lg sm:text-xl text-yellow-400">
+              {s.value}
+            </p>
+            <p className="text-[11px] sm:text-xs text-neutral-400 leading-tight">
+              {s.label}
+            </p>
+          </div>
+        ))}
+      </div>
+      <p className="text-sm text-neutral-300 leading-relaxed mb-3">
+        {scene.newsFlash.body}
+      </p>
+      <p className="text-[11px] text-neutral-500 italic">
+        {scene.newsFlash.source}
+      </p>
+    </div>
+  </div>
+)}
         <div className="space-y-3 max-w-xl">
           {!isEnding &&
             scene.choices.map((choice, i) => (
