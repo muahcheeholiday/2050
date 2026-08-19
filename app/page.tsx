@@ -32,7 +32,7 @@ export default function Home() {
 
         <div className="relative z-10 min-h-dvh flex flex-col items-center justify-center px-6 text-center">
           <div className="flex items-center gap-3 mb-8">
-            <div className="w-2 h-8 bg-yellow-400" />
+            <div className="w-2 h-8 bg-pink-500" />
             <span className="font-headline font-bold tracking-widest text-xl uppercase">
               2050
             </span>
@@ -48,7 +48,7 @@ export default function Home() {
           <div className="flex flex-col sm:flex-row gap-4 w-full max-w-md">
             <button
               onClick={() => setGender("female")}
-              className="flex-1 px-6 py-4 bg-black/40 border-2 border-yellow-400 hover:bg-yellow-400 hover:text-black transition-colors backdrop-blur-sm"
+              className="flex-1 px-6 py-4 bg-black/40 border-2 border-pink-500 hover:bg-pink-500 hover:text-black transition-colors backdrop-blur-sm"
             >
               <span className="font-headline font-semibold uppercase tracking-wide">
                 Play as Her
@@ -56,7 +56,7 @@ export default function Home() {
             </button>
             <button
               onClick={() => setGender("male")}
-              className="flex-1 px-6 py-4 bg-black/40 border-2 border-yellow-400 hover:bg-yellow-400 hover:text-black transition-colors backdrop-blur-sm"
+              className="flex-1 px-6 py-4 bg-black/40 border-2 border-pink-500 hover:bg-pink-500 hover:text-black transition-colors backdrop-blur-sm"
             >
               <span className="font-headline font-semibold uppercase tracking-wide">
                 Play as Him
@@ -82,14 +82,14 @@ export default function Home() {
         style={{ paddingBottom: "calc(5rem + env(safe-area-inset-bottom))" }}
       >
         <div className="absolute top-6 left-1/2 -translate-x-1/2 sm:top-10 flex items-center gap-3">
-          <div className="w-2 h-8 bg-yellow-400" />
+          <div className="w-2 h-8 bg-pink-500" />
           <span className="font-headline font-bold tracking-widest text-lg sm:text-xl uppercase">
             2050
           </span>
         </div>
 
         <div className="mb-3">
-          <span className="inline-block bg-yellow-400 text-black font-headline font-semibold text-xs sm:text-sm tracking-wider uppercase px-3 py-1">
+          <span className="inline-block bg-pink-500 text-black font-headline font-semibold text-xs sm:text-sm tracking-wider uppercase px-3 py-1">
             {scene.year}
           </span>
           {isEnding && (
@@ -112,8 +112,8 @@ export default function Home() {
         </p>
 
         {scene.stat && (
-          <div className="border-l-4 border-yellow-400 bg-black/50 backdrop-blur-sm px-5 py-4 mb-8 sm:mb-10 mx-auto max-w-xl text-left">
-            <p className="font-headline font-bold text-3xl sm:text-4xl text-yellow-400 mb-1">
+          <div className="border-l-4 border-pink-500 bg-black/50 backdrop-blur-sm px-5 py-4 mb-8 sm:mb-10 mx-auto max-w-xl text-left">
+            <p className="font-headline font-bold text-3xl sm:text-4xl text-pink-500 mb-1">
               {scene.stat.value}
             </p>
             <p className="text-sm sm:text-base text-neutral-300 leading-snug mb-2">
@@ -141,8 +141,8 @@ export default function Home() {
               </h3>
               <div className="grid grid-cols-3 gap-3 mb-4">
                 {scene.newsFlash.stats.map((s, i) => (
-                  <div key={i} className="border-t-2 border-yellow-400 pt-2">
-                    <p className="font-headline font-bold text-lg sm:text-xl text-yellow-400">
+                  <div key={i} className="border-t-2 border-pink-500 pt-2">
+                    <p className="font-headline font-bold text-lg sm:text-xl text-pink-500">
                       {s.value}
                     </p>
                     <p className="text-[11px] sm:text-xs text-neutral-400 leading-tight">
@@ -167,7 +167,7 @@ export default function Home() {
               <button
                 key={i}
                 onClick={() => setSceneId(choice.nextId)}
-                className="w-full text-left px-5 py-4 bg-black/40 border-l-4 border-yellow-400 hover:bg-black/60 hover:border-yellow-300 transition-colors backdrop-blur-sm"
+                className="w-full text-left px-5 py-4 bg-black/40 border-l-4 border-pink-500 hover:bg-black/60 hover:border-pink-400 transition-colors backdrop-blur-sm"
               >
                 <span className="font-headline text-sm sm:text-base tracking-wide uppercase text-neutral-100">
                   {choice.text}
@@ -178,7 +178,7 @@ export default function Home() {
           {isEnding && (
             <button
               onClick={handleRestart}
-              className={`px-6 py-3 font-headline font-semibold uppercase tracking-wide text-black bg-yellow-400 hover:bg-yellow-300 transition-colors border-2 ${
+              className={`px-6 py-3 font-headline font-semibold uppercase tracking-wide text-black bg-pink-500 hover:bg-pink-400 transition-colors border-2 ${
                 endingStyles[scene.ending!].accent
               }`}
             >
@@ -189,7 +189,7 @@ export default function Home() {
       </div>
 
       <div
-        className="fixed bottom-0 left-0 right-0 z-20 bg-yellow-400 text-black px-6 text-center"
+        className="fixed bottom-0 left-0 right-0 z-20 bg-pink-500 text-black px-6 text-center"
         style={{
           paddingTop: "0.75rem",
           paddingBottom: "calc(0.75rem + env(safe-area-inset-bottom))",
