@@ -108,6 +108,20 @@ export default function Home() {
           {scene.narrative}
         </p>
 
+        {scene.stat && (
+  <div className="border-l-4 border-yellow-400 bg-black/50 backdrop-blur-sm px-5 py-4 mb-8 sm:mb-10 max-w-xl">
+    <p className="font-headline font-bold text-3xl sm:text-4xl text-yellow-400 mb-1">
+      {scene.stat.value}
+    </p>
+    <p className="text-sm sm:text-base text-neutral-300 leading-snug mb-2">
+      {scene.stat.label}
+    </p>
+    <p className="text-xs text-neutral-500 uppercase tracking-wide">
+      Source: {scene.stat.source}
+    </p>
+  </div>
+)}
+
         <div className="space-y-3 max-w-xl">
           {!isEnding &&
             scene.choices.map((choice, i) => (
