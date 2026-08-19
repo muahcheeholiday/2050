@@ -9,6 +9,14 @@ export type Stat = {
   source: string;
 };
 
+export type NewsFlash = {
+  headline: string;
+  dateline: string;
+  stats: { value: string; label: string }[];
+  body: string;
+  source: string;
+};
+
 export type Scene = {
   id: string;
   year: string;
@@ -18,6 +26,7 @@ export type Scene = {
   choices: SceneChoice[];
   ending?: "positive" | "neutral" | "negative";
   stat?: Stat;
+  newsFlash?: NewsFlash;
 };
 
 export type Gender = "male" | "female";
