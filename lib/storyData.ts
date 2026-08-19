@@ -33,16 +33,63 @@ export function pronoun(gender: Gender, form: "subject" | "object" | "possessive
 export const START_SCENE_ID = "start";
 
 export const scenes: Record<string, Scene> = {
-  start: {
-    id: "start",
-    year: "2025",
-    title: "The Summons",
-    imageUrl: "/images/scene-summit-hall.jpg",
-    narrative:
-      "You've spent years standing outside the halls of power, demanding they listen. Today, for the first time, they've invited you in. A coalition of the world's most powerful finance ministers, energy executives, and negotiators has offered you a seat at the table — a chance to shape the next 25 years of climate policy. Your choices here will echo into 2050.",
-    choices: [{ text: "Enter the negotiation room", nextId: "meeting1" }],
-  },
+start: {
+  id: "start",
+  year: "2025",
+  title: "The Summons",
+  imageUrl: "/images/scene-summit-hall.jpg",
+  narrative:
+    "You've spent years standing outside the halls of power, demanding they listen. Today, for the first time, they've invited you in. A coalition of the world's most powerful finance ministers, energy executives, and negotiators has offered you a seat at the table — a chance to shape the next 25 years of climate policy. Your choices here will echo into 2050.",
+  choices: [{ text: "Enter the negotiation room", nextId: "singapore_dilemma" }],
+},
 
+singapore_dilemma: {
+  id: "singapore_dilemma",
+  year: "2026",
+  title: "A Forest in the City",
+  imageUrl: "/images/scene-maju-forest.jpg",
+  narrative:
+    "Before the big global questions, a delegate hands you a local one. In land-scarce Singapore, the Housing Board has proposed clearing 15 of Maju Forest's 23 hectares in Clementi to build public housing, keeping the rest as a wildlife refuge. The forest is home to critically endangered species, including the Sunda pangolin and the straw-headed bulbul — but thousands of families are waiting for affordable homes in a nation with almost no undeveloped land left. Petitioners want you to weigh in.",
+  stat: {
+    value: "15 of 23 ha",
+    label: "Portion of Maju Forest, home to over 280 plant and 110 animal species, proposed for clearing for public housing in Clementi, Singapore",
+    source: "Singapore Housing & Development Board (HDB), announcement of July 10, 2026",
+  },
+  choices: [
+    { text: "Back the petitioners — push HDB to explore every alternative site first", nextId: "singapore_preserve" },
+    { text: "Support the housing plan — homes for families come first", nextId: "singapore_develop" },
+    { text: "Propose a compromise — smaller housing footprint, larger refuge", nextId: "singapore_compromise" },
+  ],
+},
+
+singapore_preserve: {
+  id: "singapore_preserve",
+  year: "2026",
+  title: "Standing With the Forest",
+  imageUrl: "/images/scene-forest-protest.jpg",
+  narrative:
+    "Your intervention adds international weight to a local fight. Nearly 25,000 residents had already signed a petition to save the forest. Housing advocates warn the delay could push back badly-needed public flats for years in a city where Build-To-Order launches are already heavily oversubscribed. It's a preview of the tension you'll face at every scale: whose today gets sacrificed for whose tomorrow?",
+  choices: [{ text: "Enter the negotiation room", nextId: "meeting1" }],
+},
+singapore_develop: {
+  id: "singapore_develop",
+  year: "2026",
+  title: "Homes First",
+  imageUrl: "/images/scene-housing-construction.jpg",
+  narrative:
+    "You back the housing plan. Families move up the waitlist. But conservationists note that mature secondary forests like Maju — which absorb carbon, cool neighborhoods, and buffer storm runoff — take decades to regenerate, if they ever fully do. The trade-off you just endorsed is one cities worldwide will keep facing as populations grow and green space shrinks.",
+  choices: [{ text: "Enter the negotiation room", nextId: "meeting1" }],
+},
+singapore_compromise: {
+  id: "singapore_compromise",
+  year: "2026",
+  title: "The Narrow Middle",
+  imageUrl: "/images/scene-forest-edge.jpg",
+  narrative:
+    "You push for a redesign — a smaller housing footprint, a larger and better-connected wildlife refuge that keeps the freshwater stream and old railway corridor intact. It satisfies no one completely. Planners grumble about lost density; conservationists warn a narrower refuge still fragments habitat. But it's a template for the harder negotiations ahead: progress measured in compromises, not clean victories.",
+  choices: [{ text: "Enter the negotiation room", nextId: "meeting1" }],
+},
+  
   meeting1: {
     id: "meeting1",
     year: "2025",
